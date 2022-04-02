@@ -90,7 +90,7 @@ export class DatabaseAPI {
     let databaseURL: string;
 
     if (typeof instance === 'string' && instance.length > 0) {
-      databaseURL = `https://${instance}.firebaseio.com`;
+      databaseURL = `https://${instance}.europe-west1.firebasedatabase.app`;
     } else {
       databaseURL = (await this.projectManager.getConfig()).databaseURL;
     }
